@@ -1,0 +1,138 @@
+:root {
+    --cor-de-fundo: #00030C;
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+}
+
+.principal {
+    background-image: url(assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fonte-principal);
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    display: block;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+}
+
+.secundario {
+    margin: 0 9em;
+    align-items: center;
+    font-family: var(--fonte-principal);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.secundario__texto {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cinza-secundario);
+}
+
+.telas {
+    margin-right: 1em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4em 0;
+}
+
+.lista__itens {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+.rodape__link {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.rodape__link__texto {
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__texto {
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
